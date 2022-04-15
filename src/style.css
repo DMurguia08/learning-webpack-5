@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('./PTSans-Regular.ttf') format('truetype'),
+        url('./PTSans-Bold.ttf') format('truetype'),
+        url('./PTSans-Italic.ttf') format('truetype'),
+        url('./PTSans-BoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hello {
+    color: red;
+    font-family: 'PT Sans', sans-serif;
+    background: url('./icon.png');
+}
