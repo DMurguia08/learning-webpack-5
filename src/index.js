@@ -1,6 +1,5 @@
-import _ from 'lodash'
-
-function component() {
+async function getComponent() {
+    const { default: _ } = await import('lodash')
     const element = document.createElement('div')
 
     element.innerHTML = _.join(['Hello', 'webpack'], ' ')
@@ -8,4 +7,6 @@ function component() {
     return element
 }
 
-document.body.appendChild(component())
+getComponent().then(component => {
+    document.body.appendChild(component)
+})
