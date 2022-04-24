@@ -6,8 +6,5 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
     },
-    mode: 'development',
-    optimization: {
-        usedExports: true,
-    },
+    mode: 'production',
 }
