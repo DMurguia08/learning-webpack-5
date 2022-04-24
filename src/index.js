@@ -2,6 +2,10 @@ import _ from 'lodash'
 
 import printMe from './print'
 
+console.log(process.env.NODE_ENV)
+//* According to documentation, this variable `process.env.NODE_ENV`
+//* is not going to work properly within Webpack scripts
+
 function component() {
     const element = document.createElement('div')
     const btn = document.createElement('button')
