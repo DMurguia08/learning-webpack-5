@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.prod.js",
     "watch": "webpack --watch --progress",
-    "start": "webpack serve --open-app-name \"chrome\""
+    "start": "webpack serve --config webpack.dev.js --open-app-name \"chrome\""
   },
   "keywords": [],
   "author": "",
